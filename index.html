@@ -1,180 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hari — Portfolio</title>
+    <title>Hari.S — Portfolio</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
     <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <!-- NAV -->
     <header class="navbar">
-      <div class="logo">Hari&nbsp;<span>S</span></div>
-
+      <div class="logo">
+        <span class="logo-accent">&lt;</span>Hari<span class="dot">.</span
+        >S<span class="logo-accent">/&gt;</span>
+        <span class="role-tag">Frontend</span>
+      </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="hire">Hire Me</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="hire-btn"
+          >Hire Me <i class="fa-solid fa-arrow-right-long"></i
+        ></a>
       </nav>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
-      <div class="glass">
-        <h1>Hi, I'm <span>Hari</span></h1>
-        <p>Software Developer</p>
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+
+      <div class="hero-container">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Open for React Developer Roles &
+          Projects
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Scalable <br />
+          <span class="gradient-text">Modern React Applications</span>
+        </h1>
+
+        <p class="subtitle">
+          Hi, I'm <strong>Hari</strong>. A Frontend / Full-Stack Developer
+          dedicated to crafting pixel-perfect interfaces, high-performance
+          interactive SPAs, and robust web solutions using
+          <strong>React</strong>.
+        </p>
 
         <div class="hero-buttons">
-          <a href="#experience" class="btn primary">My Experience</a>
-          <a href="#contact" class="btn secondary">Let’s Talk</a>
+          <a href="#experience" class="btn-premium primary-glow">
+            Explore Experience <i class="fa-solid fa-briefcase"></i>
+          </a>
+          <a href="#contact" class="btn-premium secondary-outline">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section" id="about">
-      <h2 class="title">About Me</h2>
+      <div class="section-header">
+        <span class="sub-title">Introduction</span>
+        <h2 class="title">About Me</h2>
+      </div>
 
-      <div class="about">
-        <img
-          src="image/image.jpeg"
-          class="photo"
-        />
+      <div class="about-grid">
+        <div class="dev-card-visual">
+          <div class="window-header">
+            <span class="dot-win red"></span>
+            <span class="dot-win yellow"></span>
+            <span class="dot-win green"></span>
+            <span class="window-title">Hari.js</span>
+          </div>
+          <div class="code-terminal">
+            <p class="code-line">
+              <span class="c-keyword">const</span>
+              <span class="c-name">developer</span> = {
+            </p>
+            <p class="code-line pad-1">
+              <span class="c-prop">name</span>:
+              <span class="c-string">'Hari.S'</span>,
+            </p>
+            <p class="code-line pad-1">
+              <span class="c-prop">role</span>:
+              <span class="c-string">'Frontend Engineer'</span>,
+            </p>
+            <p class="code-line pad-1">
+              <span class="c-prop">core</span>: [<span class="c-string"
+                >'React'</span
+              >, <span class="c-string">'ES6+'</span>],
+            </p>
+            <p class="code-line pad-1">
+              <span class="c-prop">passion</span>:
+              <span class="c-string">'Clean Code'</span>
+            </p>
+            <p class="code-line">};</p>
+            <div class="canvas-icon-wrap">
+              <i class="fa-brands fa-react react-pulse"></i>
+            </div>
+          </div>
+        </div>
 
-        <div>
-          <p>
-            Motivated and detail-oriented BCA graduate seeking a challenging role as a Software Developer / ERPNext Developer where I can apply my technical knowledge, problem-solving ability, and teamwork skills to contribute to organizational success and grow professionally in the field of ERP and web development.
+        <div class="about-content">
+          <p class="bio">
+            Motivated BCA graduate and Software Developer specializing in
+            building highly interactive, scalable web applications using
+            <strong>React</strong> and modern
+            <strong>JavaScript (ES6+)</strong>. Focused on optimizing frontend
+            performance, state management, state-driven interfaces, and creating
+            smooth user experiences with clean, semantic architecture.
           </p>
-                <br>
-          <div class="stack">
-            <span><i class="fa-brands fa-python"></i> Python</span>
-            <span><i class="fa-brands fa-js"></i> JavaScript</span>
-            <span><i class="fa-solid fa-database"></i> SQL</span>
-            <span><i class="fa-brands fa-github"></i> Git</span>
+
+          <div class="stack-container">
+            <h3>Core Technology Stack</h3>
+            <div class="stack">
+              <span
+                ><i class="fa-brands fa-react react-icon"></i> React.js</span
+              >
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span><i class="fa-brands fa-python"></i> Python</span>
+              <span><i class="fa-solid fa-database"></i> SQL</span>
+              <span><i class="fa-brands fa-git-alt"></i> Git</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ⭐⭐⭐ WORK EXPERIENCE (NEW) ⭐⭐⭐ -->
     <section class="section" id="experience">
-      <h2 class="title">Work Experience</h2>
-
-      <div class="timeline">
-        <div class="exp-card">
-          <h3>Junior Developer — Frappe / Python</h3>
-          <span class="time">Mazeworks Solutions — Chennai | Jul 2025 – March 2026
-</span> 
-<ul>
-          <span class="time">8 Months</span>
-</ul>
-          <ul>
-            <li>Customized ERPNext modules (HR, Accounts, Manufacturing).</li>
-            <li>Developed Python server scripts & REST APIs.</li>
-            <li>Created custom DocTypes, Reports and Workflows.</li>
-            <li>Fixed bugs, handled deployments and patch updates.</li>
-            <li>Worked with users to understand and solve business issues.</li>
-          </ul>
-
-          <div class="tech">
-            <span>Python</span>
-            <span>Frappe</span>
-            <span>ERPNext</span>
-            <span>JavaScript</span>
-            <span>MariaDB</span>
-          </div>
-        </div>
+      <div class="section-header">
+        <span class="sub-title">My Journey</span>
+        <h2 class="title">Professional Experience</h2>
       </div>
-    <br>
 
-    <div class="timeline">
-        <div class="exp-card">
-          <h3>Software Engineer</h3>
-          <span class="time">Swiftloop — Salem| Present
-</span>
-
-          <ul>
-            <li>Developing and maintaining web applications using modern technologies. 
-</li>
-            <li>Building scalable Frontend services and APIs.</li>
-            <li>Collaborating with team members to design, develop, and deploy features.</li>
-            <li>Debugging issues and optimizing application performance.
- 
-</li>
-          </ul>
-
-          <div class="tech">
-            
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>REACT</span>
-            <span>Python</span>
-
+      <div class="timeline-container">
+        <div class="timeline-card">
+          <div class="card-header">
+            <h3>Software Engineer</h3>
+            <span class="time-tag animate-tag">Present</span>
           </div>
+          <span class="company">Swiftloop</span>
+          <ul class="exp-points">
+            <li>
+              Developing dynamic Single Page Applications (SPAs) leveraging
+              modern React architecture.
+            </li>
+            <li>
+              Optimizing client-side interfaces for fast load times, smooth
+              rendering loops, and high responsiveness.
+            </li>
+            <li>
+              Collaborating with product teams to build clean, reusable
+              component libraries and robust front-end assets.
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-card">
+          <div class="card-header">
+            <h3>Web Developer</h3>
+            <span class="time-tag">2025 - 2026</span>
+          </div>
+          <span class="company">Mazeworks — Chennai</span>
+          <ul class="exp-points">
+            <li>
+              Built custom logic engines, server-side data models, and handled
+              advanced validation features.
+            </li>
+            <li>
+              Developed clean RESTful API integrations to dynamically connect
+              data channels to the frontend.
+            </li>
+            <li>
+              Created operational dashboards, system workflows, and custom user
+              analytics frameworks.
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-card">
+          <div class="card-header">
+            <h3>Freelance Web Developer</h3>
+            <span class="time-tag">2026</span>
+          </div>
+          <span class="company">Image Master & Zero Pix Creative</span>
+          <ul class="exp-points">
+            <li>
+              Designed and deployed responsive corporate and business portals
+              with ultra-modern interactive interfaces.
+            </li>
+            <li>
+              Significantly improved technical responsive layout breakpoints and
+              layout performance speeds.
+            </li>
+            <li>
+              Delivered clean, search-engine-optimized structural semantics to
+              boost search indexing visibility.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    </section>
-    <!-- SKILLS -->
+
     <section class="section" id="skills">
-      <h2 class="title">Skills</h2>
+      <div class="section-header">
+        <span class="sub-title">Expertise</span>
+        <h2 class="title">Technical Skillset</h2>
+      </div>
 
-      <div class="skills">
-        <div class="s-bar">
-          <span>Python</span>
-          <div style="width: 90%"></div>
+      <div class="skills-grid">
+        <div class="s-card">
+          <div class="s-info">
+            <span class="s-name"
+              ><i class="fa-brands fa-react react-icon"></i> React / State
+              Management</span
+            >
+            <span class="s-perc">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%"></div>
+          </div>
         </div>
-        <div class="s-bar">
-          <span>Frappe / ERPNext</span>
-          <div style="width: 85%"></div>
+
+        <div class="s-card">
+          <div class="s-info">
+            <span class="s-name"
+              ><i class="fa-brands fa-js"></i> JavaScript / ES6+</span
+            >
+            <span class="s-perc">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%"></div>
+          </div>
         </div>
-        <div class="s-bar">
-          <span>JavaScript</span>
-          <div style="width: 75%"></div>
+
+        <div class="s-card">
+          <div class="s-info">
+            <span class="s-name"
+              ><i class="fa-brands fa-python"></i> Python / Web
+              Architecture</span
+            >
+            <span class="s-perc">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%"></div>
+          </div>
         </div>
-        <div class="s-bar">
-          <span>SQL</span>
-          <div style="width: 80%"></div>
+
+        <div class="s-card">
+          <div class="s-info">
+            <span class="s-name"
+              ><i class="fa-solid fa-database"></i> Relational Databases
+              (SQL)</span
+            >
+            <span class="s-perc">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%"></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="section" id="contact">
-  <h2 class="title">Contact</h2>
+      <div class="section-header">
+        <span class="sub-title">Get In Touch</span>
+        <h2 class="title">Let's Work Together</h2>
+      </div>
 
-  <div class="contact">
-    <form>
-      <input placeholder="Your Name" required />
-      <input placeholder="Email" type="email" required />
-      <input placeholder="Message" required/>
-      <button>Send</button>
-    </form>
+      <div class="contact-layout">
+        <form class="contact-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Tell me about your project, system requirements, or open position..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
 
-    <div class="social">
-      <a href="https://www.linkedin.com/in/Hari-S04" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+        <div class="contact-sidebar">
+          <div class="info-box">
+            <h3>Based in</h3>
+            <p>Chennai, India</p>
+          </div>
 
-      <a><i class="fa-brands fa-github"></i></a>
-      <a><i class="fa-solid fa-envelope"></i></a>
-    </div>
-  </div>
-</section>
-    <footer>© 2026 Hari — Portfolio</footer>
+          <div class="social-wrapper">
+            <h3>Digital Channels</h3>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/Hari-S04"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:yourmail@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Hari.S — Portfolio. Crafted with passion.</p>
+    </footer>
   </body>
 </html>
